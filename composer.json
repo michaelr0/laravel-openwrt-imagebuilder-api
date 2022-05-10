@@ -1,0 +1,45 @@
+{
+    "name": "michaelr0/laravel-openwrt-imagebuilder-api",
+    "description": "Openwrt ASU Imagebuilder API wrapper for Laravel",
+    "keywords": [
+        "michaelr0",
+        "openwrt"
+    ],
+    "homepage": "https://github.com/michaelr0/laravel-openwrt-imagebuilder-api",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Michael Rook",
+            "email": "michael@rook.net.au",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Michaelr0\\LOIA\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Michaelr0\\LOIA\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": []
+    }
+}
